@@ -12290,3 +12290,197 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	border-radius: 4px;
 	border: 1px solid #d7d7d7;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* courses page  */
+.card {
+	/* position: relative;
+	overflow: hidden; */
+
+	border-radius: 2rem;
+	height: 400px;
+
+	/* box-shadow: 10px 10px 5px grey; */
+	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.card-header{
+	border-radius: 2rem !important;
+}
+
+.card-header p{
+	font-size: xx-large;
+}
+
+.card-content{
+	background-image: url(../images/online-interview.jpg);
+	background-size: contain;
+	height: 320px;
+	border-radius: 2rem;
+	width: auto;
+}
+
+
+.card-img-overlay{
+	position: relative;
+	border-radius: 2rem;
+	height:100%;
+	width:100%;
+    display: flex;
+    flex-direction: column;
+	align-items: flex-start ;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+    color: #fff;
+
+	transition: opacity 0.5s ease, background 0.5s ease 0.2s;
+}
+
+.card-img-overlay p, h3{
+	font-family:'Times New Roman', Times, serif ;
+	color: #fff;
+	text-align: left;
+	opacity: 0;
+}
+
+/* .card:hover .card-img-overlay{
+	background: linear-gradient(360deg, #F20C78 0%, rgba(185, 96, 192, 0.00) 100%);
+	
+	animation: gradientAnimation 0.2s ease-in-out;
+} */
+
+.card-img-overlay:hover{
+	background: linear-gradient(360deg, purple 0%, rgba(185, 96, 192, 0.00) 100%);
+	
+	/* animation: gradientAnimation 0.2s ease-in-out; */
+}
+
+@keyframes gradientAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.card:hover .card-img-overlay p{
+    opacity: 1;
+}
+.card:hover .card-img-overlay h3 {
+    opacity: 1;
+}
+
+.card-buttons{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-content: space-between;
+	opacity: 1 !important;
+}
+
+.card-buttons .btn-overlay{
+  appearance: button !important;
+  background-color: #4D4AE8 ;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+  border: 1px solid #4D4AE8;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-transform: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+
+  min-width: 130px;
+  
+  /* display: none; */
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+
+  /* opacity: 1 !important; */
+  transition: opacity 0.5s ease; 
+
+	box-shadow: 10px 10px 5px grey;
+}
+
+.card-buttons .btn-overlay a{
+	color:#fff;
+}
+
+
+
+
+.card-buttons:hover {
+	animation: abc 0.1s ease-in-out;
+}
+
+@keyframes abc {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.dropdown-menu.show{
+	max-height:200px;
+	width: 200px;
+	overflow: auto;
+	padding: 10px;
+	padding-right: 0px;
+	background-color: #00aced;
+	border-radius: 2rem;
+}
+
+/* scrollbar of dropdown menu */
+#scrollbar1::-webkit-scrollbar {
+	width: 10px;
+}
+#scrollbar1::-webkit-scrollbar-track {
+	border-radius: 8px;
+	background-color: #e7e7e7;
+	border: 1px solid #cacaca;
+}
+#scrollbar1::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	background-color: #d55959;
+}
