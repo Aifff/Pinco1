@@ -40,8 +40,8 @@
 			multitoggle: document.querySelectorAll('[data-multitoggle]')
 		};
 
-	// Initialize scripts that require a loaded page
-	$window.on('load', function () {
+		// Initialize scripts that require a loaded page
+		$window.on('load', function () {
 		// Page loader & Page transition
 		if (plugins.preloader.length && !isNoviBuilder) {
 			pageTransition({
