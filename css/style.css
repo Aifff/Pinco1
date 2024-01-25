@@ -12564,6 +12564,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	color:#fff;
   }
 
+  @media (max-width:767px) {
+	.social{
+	right: 10px;
+  }
+}
+
   .social ul {
     padding: 0;
     transform: translate(270px, 0);
