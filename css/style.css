@@ -12559,8 +12559,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .social {
     position: fixed;
     top: 100px;
-    right: 62px; /* Adjust the right distance as needed */
+    right: 50px; /* Adjust the right distance as needed */
 	z-index: 5;
+	color:#fff;
   }
 
   .social ul {
@@ -12570,6 +12571,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .social ul li {
     display: block;
+	color: #fff;
     margin: 5px;
     background: grey;
     width: 300px;
@@ -12580,23 +12582,39 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	z-index: 5;
   }
 
-  .twt{
-
+  .twt:hover{
+	background-color: blue;
   }
 
+  .insta:hover{
+	background-color: purple;
+  }
 
+  .linkedin:hover{
+	background: navy;
+  }
+
+  .twt a{
+	color: blue;
+  }
+
+  .insta a{
+	color: purple;
+  }
+
+  .linkedin a{
+	color: navy;
+  }
 
 
 
   .social ul li:hover {
     transform: translate(-70px, 0);
-    /* background: rgba(255, 255, 255, 0.4); */
-	background: purple;
 	z-index: 1;
   }
 
   .social ul li:hover a {
-    color: #000;
+    color: #fff;
   }
 
   .social ul li:hover i {
