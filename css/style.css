@@ -6827,6 +6827,8 @@ html:not(.lt-ie10) .not-animated {
 * ToTop
 */
 .ui-to-top {
+	display: none;    /*UnComment for To-Top button on roght-bottom*/
+
 	position: fixed;
 	right: 15px;
 	bottom: 15px;
@@ -12580,20 +12582,22 @@ transition: opacity 0.5s ease;
 .social {
 	position: fixed;
 	top: 100px;
-	right: 50px; /* Adjust the right distance as needed */
+	/* right: 50px; Adjust the right distance as needed */
+	right: -250px;
 	z-index: 5;
 	color:#fff;
 }
 
 @media (max-width:767px) {
 	.social{
-	right: 10px;
+	/* right: 10px; */
+	right:-260px;
 }
 }
 
 .social ul {
 	padding: 0;
-	transform: translate(270px, 0);
+	/* transform: translate(270px, 0); */
 }
 
 .social ul li {
@@ -12726,29 +12730,42 @@ transition: opacity 0.5s ease;
 	gap: 50px;
 	justify-content: center;
 	align-items: center;
+	padding:50px;
+}
+
+@media (max-width:767px){
+	.blog{
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .blog-card{
 	border-radius: 70px;
 background: linear-gradient(180deg, #6826EA 0%, #99EDFF 100%);
-box-shadow: 0px 0px 40px 0px rgba(0, 77, 227, 0.80) inset, 30px 30px 32px -11px rgba(153, 237, 255, 0.55);
 backdrop-filter: blur(1.149999976158142px);
+/* box-shadow: 0px 0px 40px 0px rgba(0, 77, 227, 0.80) inset, 30px 30px 32px -11px rgba(153, 237, 255, 0.55); */
 
-padding: 35px;
+padding: 22px 42px 20px 43px;
 width: 400px;
 height: 200px;
 }
 
+.blog-card:hover{
+	/* box-shadow: 0 0 20px rgba(0, 128, 255, 0.8); */
+	animation: glow 1s infinite alternate;
+
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 128, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 128, 255, 0.8);
+    }
+}
+
 .blog-card p{
 	text-align: left;
-}
-
-
-
-.blog-title{
-
-}
-
-.blog-text{
-
 }
