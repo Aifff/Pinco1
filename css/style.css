@@ -12772,6 +12772,21 @@ height: 200px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* teams section on home page */
 .marq{
 	overflow: hidden;
 	white-space: nowrap;
@@ -12781,7 +12796,7 @@ height: 200px;
 	display: inline-block;
 	width:1865px;   /*change to {(370Xnumber-of-people)+15px} (370px is each card's size and 15 is gap between them-margins) */
 	/* Width shouldnt be changed for different screensizes, its set for child div */
-	
+
 	animation: 15s marquee infinite linear;
 }
 
