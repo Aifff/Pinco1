@@ -13016,7 +13016,7 @@ height: 200px;
   @media only screen and (max-width: 37.5em), only screen and (hover: none) {
 	.Ncard {
 	  height: auto;
-	  border-radius: 3px;
+	  border-radius: 3rem 0rem 3rem 0rem;
 	  background-color: #fff;
 	  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
 	}
@@ -13027,9 +13027,13 @@ height: 200px;
 	}
 	.Ncard__side--front {
 	  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+	  border-radius: 3rem 0rem 3rem 0rem;
+
 	}
 	.Ncard__side--back {
 	  transform: rotateY(0);
+	border-radius: 3rem 0rem 3rem 0rem;
+
 	}
 	.Ncard:hover .Ncard__side--front {
 	  transform: rotateY(0);
@@ -13051,6 +13055,12 @@ height: 200px;
 	}
 	.Ncard__title {
 	  font-size: 4rem;
+	}
+	.Ncard__subject{
+		font-size: 1rem;
+	}
+	.Ncard__title{
+		font-size: 1rem;
 	}
   }
 
