@@ -12894,7 +12894,7 @@ height: 200px;
   }
   @media (max-width: 37.5em) {
 	.artboard {
-	  padding: 1rem;
+	  padding: 0rem;
 	}
   }
   
@@ -13013,12 +13013,14 @@ height: 200px;
   .Ncard__details ul li:not(:last-child) {
 	border-bottom: 1px solid #eee;
   }
+
   @media only screen and (max-width: 37.5em), only screen and (hover: none) {
 	.Ncard {
 	  height: auto;
 	  border-radius: 3rem 0rem 3rem 0rem;
 	  background-color: #fff;
 	  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+	  width: 80%;
 	}
 	.Ncard__side {
 	  height: auto;
