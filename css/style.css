@@ -12812,3 +12812,306 @@ height: 200px;
 .marq:hover .marquee--inner{
 	animation-play-state: paused;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cards css--new */
+.artboard {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0rem;
+	height: 50%;
+	position: relative;
+
+	padding-right:15px;
+	padding-left:15px;
+  }
+  @media (max-width: 37.5em) {
+	.artboard {
+	  padding: 1rem;
+	}
+  }
+  
+  .Ncard {
+	flex: initial;
+	position: relative;
+	/* height: 52rem; */
+	/* width: 48rem; */
+	height:450px;
+	width: 380px;
+	-moz-perspective: 200rem;
+	perspective: 200rem;
+	/* margin: 2rem; */
+  }
+  .Ncard__side {
+	/* height: 52rem; */
+	height: 100%;
+	transition: all 0.8s ease;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	-webkit-backface-visibility: hidden;
+	/* We don't want to see the back part of the element. */
+	backface-visibility: hidden;
+	/* We don't want to see the back part of the element. */
+	border-radius: 3px;
+	overflow: hidden;
+	/* The image is overflowing the parent. */
+	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+  }
+  .Ncard__side--front {
+	border-radius: 3rem 0rem 3rem 0rem;
+	background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.7)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+  }
+  .Ncard__side--back {
+	border-radius: 3rem 0rem 3rem 0rem;
+	background-color: #fff;
+	transform: rotateY(180deg);
+  }
+  .Ncard:hover .Ncard__side--back {
+	transform: rotateY(0);
+  }
+  .Ncard:hover .Ncard__side--front {
+	transform: rotateY(-180deg);
+  }
+  .Ncard__theme {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	top: 54%;
+	width: 90%;
+	text-align: center;
+  }
+  .Ncard__theme-box {
+	color: #fff;
+	/* margin-bottom: 8rem; */
+  }
+  .Ncard__subject {
+	font-family: "Inconsolata", monospace;
+	letter-spacing: 0.8rem;
+	font-size: 3rem;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+  }
+  .Ncard__title {
+	font-family: "VT323", monospace;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-weight: 100;
+  }
+  .Ncard__cover {
+	position: relative;
+	background-size: cover;
+	height: 7.5rem;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+  }
+  .Ncard__heading {
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 85%;
+  }
+  .Ncard__heading-span {
+	font-family: "VT323", monospace;
+	font-size: 2rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 1rem 1.5rem;
+	color: #fff;
+  }
+  .Ncard__details {
+	font-family: "Inconsolata", monospace;
+	padding: 2rem 1rem;
+	display: flex;
+	flex-direction: row;
+  }
+  .Ncard__details ul {
+	list-style: none;
+	/* width: 80%; */
+	margin: 0 auto;
+  }
+  .Ncard__details ul li {
+	text-align: center;
+	font-size: 1rem;
+	padding:0rem;
+  }
+  .Ncard__details ul li:not(:last-child) {
+	border-bottom: 1px solid #eee;
+  }
+  @media only screen and (max-width: 37.5em), only screen and (hover: none) {
+	.Ncard {
+	  height: auto;
+	  border-radius: 3px;
+	  background-color: #fff;
+	  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+	}
+	.Ncard__side {
+	  height: auto;
+	  position: relative;
+	  box-shadow: none;
+	}
+	.Ncard__side--front {
+	  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+	}
+	.Ncard__side--back {
+	  transform: rotateY(0);
+	}
+	.Ncard:hover .Ncard__side--front {
+	  transform: rotateY(0);
+	}
+	.Ncard__details {
+	  padding: 3rem 2rem;
+	}
+	.Ncard__theme {
+	  position: relative;
+	  top: 0;
+	  left: 0;
+	  transform: translate(0);
+	  width: 100%;
+	  padding: 5rem 4rem 1.5rem 4rem;
+	  text-align: right;
+	}
+	.Ncard__theme-box {
+	  margin-bottom: 1.5rem;
+	}
+	.Ncard__title {
+	  font-size: 4rem;
+	}
+  }
+
+  /* new-card-button */
+  .try-button{
+	display: flex;
+	justify-content: center;
+  }
+
+  .arrow-button {
+    display: flex;
+    color: #47165c;
+    background-color: #c963c9;
+	border-color: #c963c9;
+    padding: 10px 16px;
+    border-radius: 20px;
+    transition: all .3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    font-size: 14px;
+}
+
+.arrow-button > .arrow {
+    width: 13px;
+    height: 13px;
+    border-right: 2px solid #47165c;
+    border-bottom: 2px solid #47165c;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 0 6px;
+    transition: all .3s ease;
+}
+
+.arrow-button > .arrow::before {
+    display: block;
+    background-color: currentColor;
+    width: 3px;
+    transform-origin: bottom right;
+    height: 2px;
+    position: absolute;
+    opacity: 0;
+    bottom: calc(-2px / 2);
+    transform: rotate(45deg);
+    transition: all .3s ease;
+    content: "";
+    right: 0;
+}
+
+.arrow-button:hover > .arrow {
+    transform: rotate(-45deg) translate(4px, 4px);
+    border-color: text-hover-color;
+}
+
+.arrow-button:hover > .arrow::before {
+    opacity: 1;
+    width: 15px;
+	color:#000;
+}
+
+.arrow-button:hover {
+    background-color: #6826ea;
+    color: #fff;
+}
